@@ -213,7 +213,9 @@ class Make_excel():
     def __init__(self, TEAM1, TEAM2, Expected_result):      # 팀 변수 설정
     def start(self):                                        # 과거 기록(웹 스크랩), 푸아송 분포, 자체 결과도출 엑셀에 저장
 ```
+
 **Description**
+
 
 웹 스크랩을 통한 과거의 기록 및 승률 계산 ~~~(웹 스크랩 설명은 중복이므로 생략)~~~
 
@@ -222,6 +224,7 @@ poisson_distribution.py의 Poisson을 호출하고 get_poisson을 호출함으�
 ex)write_ws['E9'] = "<MY RESULT>" 와 같이 원하는 위치에 엑셀 데이터 저장
     
 yellowFill = PatternFill(start_color='FFFF99', end_color='FFFF99', fill_type='solid') 와 같이 색상 대입
+
 
 **Return**
 
