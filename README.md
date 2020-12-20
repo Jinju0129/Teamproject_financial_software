@@ -163,6 +163,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 
 **Return**
+
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
@@ -198,6 +199,7 @@ get_result는 위 4개의 method를 호출함
 
 
 **Return**
+
 result_dict을 반환함. 
 ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당되어 있음
 
