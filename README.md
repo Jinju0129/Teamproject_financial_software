@@ -56,7 +56,7 @@
     * [functions](*functions)
         + [main.py](#mainpy)
         + [stat_players.py](#stat_playerspy)
-        + [calcul.py](#calculpy)
+        + [calcul.py](#calcul_py)
         + [make_excel.py](#make_excelpy)
         + [poisson_distribution.py](#poisson_distributionpy)
         + [Pannel.py](#Pannelpy)
