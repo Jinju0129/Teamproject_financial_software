@@ -189,7 +189,6 @@ class Calculate:
 
 **Description**  
 #
-
 calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
 
 calculte_shoot은 스탯의 일부를 합산하여 team1과 team2 간의 슈팅, 선방횟수, 골을 계산함. 이를 위한 자체 알고리즘 이용
@@ -199,7 +198,6 @@ calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비
 calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
 
 get_result는 위 4개의 method를 호출함  
-
 #
 ### Return
 
@@ -209,7 +207,6 @@ ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당�
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
         </div>
----
 
 ### make_excel.py
 > 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀 파일(result_list.xlsx)에 저장
@@ -222,7 +219,6 @@ class Make_excel():
 ```
 
 **Description**
-
 #
 
 웹 스크랩을 통한 과거의 기록 및 승률 계산 ~~~(웹 스크랩 설명은 중복이므로 생략)~~~
@@ -234,7 +230,6 @@ ex)write_ws['E9'] = "<MY RESULT>" 와 같이 원하는 위치에 엑셀 데이�
 yellowFill = PatternFill(start_color='FFFF99', end_color='FFFF99', fill_type='solid') 와 같이 색상 대입
 
 #
-
 **Return**
 
 excel = win32com.client.Dispatch("Excel.Application") 에서 excel 반환. 
