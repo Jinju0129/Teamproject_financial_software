@@ -4,6 +4,10 @@
 
 참가자: 맹진주, 김예진, 우용승
 
+해당 프로젝트는 windows10에서 진행하였으며 Microsoft excel이 필요합니다.
+
+작성자는 office16버전에서 진행하였으며, 타 버전은 확인해보지 못했으나, 프로젝트 진행 오류시 16버전으로 설치 뒤 진행해보길 바랍니다
+
 ------------------------------------
 ### 주제: 랜덤 능력치와 FIFA게임 능력치를 활용한 축구 결과 시나리오 예측
 
@@ -20,21 +24,23 @@
 
 
 ## Getting started
-1. Teamproject_financial_software 프로젝트를 클론합니다.
+
+1. Teamproject_financial_software 프로젝트를 클론합니다
 
     ```shell
-    git clone https://github.com/kohyounghwan/Libft.git
+    git clone https://github.com/WooYongSeung/Teamproject_financial_software.git
     ```
 
-2. make 명령어를 통해 정적 라이브러리(*libft.a*)를 생성합니다.  
+2. Pycharm으로 해당 프로젝트를 open한 뒤, pycharm 하단 부분의 Terminal을 누르고 다음을 입력합니다
 
     ```shell
-    make
+    pip install -U -r requirements.txt
+    에러시 pip install --upgrade pip를 진행한 뒤, 재입력합니다
+    그래도 에러시 pip install -r requirements.txt를 입력합니다
     ```
 
-3. 작성하신 코드를 라이브러리와 함께 컴파일 합니다.
+3. main.py에서 프로그램을 실행합니다.
 
     ```shell
-    # If code you write is main.c
-    gcc libft.a main.c
+    main.py에서 빈 공간에 우클란 한 뒤, Run 'main'하시면 됩니다
     ```
