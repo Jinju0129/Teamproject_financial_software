@@ -249,18 +249,45 @@ excel 을 통하여 해당 엑셀 파일(result_list.xlsx)을 열고 닫을 수 
 
 **Prototype Declaration**
 ```python
-void    main()
+class Poisson:
+    def __init__(self, team_1_score, team_2_score):     # 리그 평균 득점률, 실점률 및 team1의 득점률, team2의 득점률 계산
+    def get_poisson_list(self):                         # 팀 별로 0~9골을 넣을 확률 계산
+    def result(self, number, win_prob):                 # 각 X골을 넣을 확률을 푸아송 분포에 대입하여 계산
+    
 ```
 **Description**
 
+team1의 공격력은 ( team_1의 평균 득점 / 리그의 평균 득점)
+
+team1의 방어력은 ( team_2의 평균 득점 / 리그의 평균 실점)
+
+team2의 공격력은 ( team_2의 평균 득점 / 리그의 평균 득점)
+
+team2의 방어력은 ( team_1의 평균 득점 / 리그의 평균 실점)
+
+team 1의 득점 확률은 (team 1의 공격력 * team 2의 방어력 * 리그의 평균 득점)
+
+team 2의 득점 확률은 (team 2의 공격력 * team 1의 방어력 * 리그의 평균 득점)
+
+여기에서 구한 것을 푸아송 분포에 대입하게 됨. 각 득점 확률이 win_prob에 대입되고, 득점 수가 number임
+
+**푸아송 분포 식**
+
+```
+ def result(self, number, win_prob):
+        x = number
+        miu = win_prob
+        poisson_prob = ((miu ** x) * exp(-miu)) / factorial(x)
+
+        return poisson_prob
+```
+
 #
+### Return
 
-메모리 영역 초기화
+team1_poisson_list와 team2_poisson_list를 make_excel.py에 반환
 
-#
-
-**Return**
-메모리 영역 반환
+이 값들은 각 팀의 0~9골을 넣을 확률을 의미함
 
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
