@@ -39,7 +39,7 @@
 
 2. Pycharm으로 해당 프로젝트를 open한 뒤, pycharm 하단 부분의 Terminal을 누르고 다음을 입력합니다
 
-    ```python
+    ```
     pip install -U -r requirements.txt
     에러시 pip install --upgrade pip를 진행한 뒤, 재입력합니다
     그래도 에러시 pip install -r requirements.txt를 입력합니다
@@ -53,7 +53,7 @@
     
 4. 하단 작업표시줄을 보시면 엑셀 결과와 pygame이 결과로 출력됩니다. pygame을 종료하면 excel이 자동으로 종료됩니다 
 
-    ```shell
+    ```
     result_list.xlsx파일을 임의로 open 한 뒤 프로그램을 실행하면 error가 발생합니다. 프로그램 실행 시 유의해주세요.
     ```
 
