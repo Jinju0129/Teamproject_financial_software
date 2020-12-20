@@ -87,7 +87,8 @@ def    main()
 **Description**
 
 선수 스탯 random을 선택 시
-stat_players.py의 set_start_random('팀 name') 호출  
+stat_players.py의 set_start_random('팀 name') 호출
+
 선수 스탯 auto를 선택 시
 stat_players.py의 set_start_auto('팀 name') 호출
 
@@ -122,7 +123,6 @@ def set_start_auto(team1):                      # 선수 생성 및 set_stat_aut
 ```
 
 **Description**
-
 
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
@@ -159,8 +159,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
-  
-**Return**  
+**Return**
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
@@ -194,7 +193,6 @@ calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비
 calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
 
 get_result는 위 4개의 method를 호출함  
-
 
 **Return**
 
