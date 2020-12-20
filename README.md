@@ -116,6 +116,7 @@ def set_start_auto(team1):
 
 **Description**
 
+
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
 사용자가 입력한 스탯 할당 방식에 따라 선수들의 스탯을 할당
@@ -127,7 +128,6 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 이 메서드는 다시 클래스의 set_stat_auto()를 활용
 
 할당 결과를 사용자에게 확인시키기 위해 print_player_info를 통해 팀 내의 선수 전부의 스탯을 print
-
 
 
 **set_stat_auoto의 중요 방식 웹 스크랩**
