@@ -205,17 +205,29 @@ ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당�
 ---
 
 ### make_excel.py
-> 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀에 
+> 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀 파일(result_list.xlsx)에 저장
 
 **Prototype Declaration**
 ```python
-void    main()
+class Make_excel():
+    def __init__(self, TEAM1, TEAM2, Expected_result):      # 팀 변수 설정
+    def start(self):                                        # 과거 기록(웹 스크랩), 푸아송 분포, 자체 결과도출 엑셀에 저장
 ```
 **Description**
-메모리 영역 초기화
+
+웹 스크랩을 통한 과거의 기록 및 승률 계산 ~~~(웹 스크랩 설명은 중복이므로 생략)~~~
+
+poisson_distribution.py의 Poisson을 호출하고 get_poisson을 호출함으로써 푸아송 분포의 결과를 전달 받음
+
+ex)write_ws['E9'] = "<MY RESULT>" 와 같이 원하는 위치에 엑셀 데이터 저장
+    
+yellowFill = PatternFill(start_color='FFFF99', end_color='FFFF99', fill_type='solid') 와 같이 색상 대입
 
 **Return**
-메모리 영역 반환
+
+excel = win32com.client.Dispatch("Excel.Application") 에서 excel 반환. 
+
+excel 을 통하여 해당 엑셀 파일(result_list.xlsx)을 열고 닫을 수 있음
 
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
