@@ -1,4 +1,4 @@
-# Welcome to the Teamproject_financial_software !!
+# Welcome to the Teamproject_financial_software!!
 
 금융 소프트웨어 팀 프로젝트용 repository입니다.
 
@@ -46,4 +46,4 @@
     ```
 
 ## Contents
-- [Welcome to the Teamproject_financial_software !!](#Wecome-to-the-Teamproject_financial_software-!!-)
+- [Welcome to the Teamproject_financial_software !!](#Welcome-to-the-Teamproject_financial_software!!)
