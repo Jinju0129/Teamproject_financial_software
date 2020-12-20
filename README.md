@@ -76,7 +76,7 @@
 
 ---
 
-### main.py
+## main.py
 > 함수 총괄(사용자 입력, 다른 method 호출 및 종료 등)
 
 **Prototype Declaration**
@@ -109,7 +109,7 @@ pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출
         </div>
 
 ---
-### stat_players.py
+## stat_players.py
 > 선수들 능력치 할당(랜덤 or auto)
 
 **Prototype Declaration**
@@ -173,7 +173,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 ---
 
-### calcul_score.py
+## calcul_score.py
 > 종합된 선수들의 스탯을 활용하여, 경기 결과 도출
 
 **Prototype Declaration**
@@ -210,7 +210,7 @@ ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당�
 
 ---
 
-### make_excel.py
+## make_excel.py
 > 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀 파일(result_list.xlsx)에 저장
 
 **Prototype Declaration**
@@ -244,7 +244,7 @@ excel 을 통하여 해당 엑셀 파일(result_list.xlsx)을 열고 닫을 수 
 
 ---
 
-### poisson_distribution.py
+## poisson_distribution.py
 > 푸아송 분포를 통해 두 팀간의 스코어 확률을 예측함.
 
 **Prototype Declaration**
@@ -268,7 +268,7 @@ void    main()
 
 ---
 
-### Pannel.py
+## Pannel.py
 > 결과들을 pygame을 통해서 시각적으로 표현함
 
 **Prototype Declaration**
