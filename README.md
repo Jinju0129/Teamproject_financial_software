@@ -50,7 +50,7 @@
     ```
 
 ## Contents
-- [Welcome to the Group10's Teamproject_financial_software !!](#welcome-to-the-group10's-teamproject_financial_software)welcome-to-the-group10s-teamproject_financial_software)
+- [Welcome to the Group10's Teamproject_financial_software !!](#welcome-to-the-group10s-teamproject_financial_software)
     * [Getting started](#getting-started)
     * [Contents](#contents)
     * [functions](#functions)
