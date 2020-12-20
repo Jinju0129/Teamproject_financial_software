@@ -39,7 +39,7 @@
 
 2. Pycharm으로 해당 프로젝트를 open한 뒤, pycharm 하단 부분의 Terminal을 누르고 다음을 입력합니다
 
-    ```shell
+    ```python
     pip install -U -r requirements.txt
     에러시 pip install --upgrade pip를 진행한 뒤, 재입력합니다
     그래도 에러시 pip install -r requirements.txt를 입력합니다
@@ -47,7 +47,7 @@
 
 3. main.py에서 프로그램을 실행합니다.
 
-    ```shell
+    ```
     main.py에서 빈 공간에 우클릭 한 뒤, Run 'main'하시면 됩니다
     ```
     
