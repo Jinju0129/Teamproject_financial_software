@@ -319,9 +319,10 @@ initGame과 runGame은 pygame의 밑바탕과 루틴을 조절하며 pannel에�
 
 각 위치의 설정 값 등은 Test등을 통해 할당했으며, image를 각각 동일한 크기로 편집하여 사용자가 일관성 있게 결과를 보도록 함
 
+#
 **Return**
 
-pygame 화면을 
+pygame 화면을 출력
 
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
