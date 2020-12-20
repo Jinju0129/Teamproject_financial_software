@@ -33,7 +33,7 @@
 
 1. Teamproject_financial_software 프로젝트를 클론합니다
 
-    ```shell
+    ```
     git clone https://github.com/WooYongSeung/Teamproject_financial_software.git
     ```
 
@@ -49,6 +49,12 @@
 
     ```shell
     main.py에서 빈 공간에 우클릭 한 뒤, Run 'main'하시면 됩니다
+    ```
+    
+4. 하단 작업표시줄을 보시면 엑셀 결과와 pygame이 결과로 출력됩니다. pygame을 종료하면 excel이 자동으로 종료됩니다 
+
+    ```shell
+    result_list.xlsx파일을 임의로 open 한 뒤 프로그램을 실행하면 error가 발생합니다. 프로그램 실행 시 유의해주세요.
     ```
 
 ## Contents
