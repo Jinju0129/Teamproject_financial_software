@@ -135,7 +135,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 반면에, 오토(웹 스크랩 방식)로 설정한다고 하면, main에서 set_start_auto()를 호출
 이 메서드는 다시 클래스의 set_stat_auto()를 활용
 
-할당 결과를 사용자에게 확인시키기 위해 print_player_info를 통해 팀 내의 선수 전부의 스탯을 print
+할당 결과를 사용자에게 확인시키기 위해 print_player_info를 통해 팀 내의 선수 전부의 스탯을 print  
 
 **set_stat_auoto의 중요 기능인 웹 스크랩**
 ```python
@@ -160,9 +160,8 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
-
-**Return**
-
+  
+**Return**  
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
@@ -185,7 +184,7 @@ class Calculate:
     def get_result(self):                           # 위의 메소드들을 호출
 ```
 
-**Description**
+**Description**  
 
 calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
 
@@ -195,9 +194,9 @@ calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비
 
 calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
 
-get_result는 위 4개의 method를 호출함
+get_result는 위 4개의 method를 호출함  
 
-**Return**
+**Return**  
 
 result_dict을 반환함. 
 ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당되어 있음
