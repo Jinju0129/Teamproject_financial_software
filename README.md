@@ -1,4 +1,4 @@
-# Teamproject_financial_software
+# Welcome to the Teamproject_financial_software !!
 
 금융 소프트웨어 팀 프로젝트용 repository입니다.
 
@@ -42,5 +42,8 @@
 3. main.py에서 프로그램을 실행합니다.
 
     ```shell
-    main.py에서 빈 공간에 우클란 한 뒤, Run 'main'하시면 됩니다
+    main.py에서 빈 공간에 우클릭 한 뒤, Run 'main'하시면 됩니다
     ```
+
+## Contents
+- [Welcome to the Teamproject_financial_software !!](#Wecome to the Teamproject_financial_software !!)
