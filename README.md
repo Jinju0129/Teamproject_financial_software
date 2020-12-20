@@ -208,6 +208,8 @@ ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당�
     <b><a href = "#Contents">back to the top</a><b>
         </div>
 
+---
+
 ### make_excel.py
 > 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀 파일(result_list.xlsx)에 저장
 
@@ -230,7 +232,7 @@ ex)write_ws['E9'] = "<MY RESULT>" 와 같이 원하는 위치에 엑셀 데이�
 yellowFill = PatternFill(start_color='FFFF99', end_color='FFFF99', fill_type='solid') 와 같이 색상 대입
 
 #
-**Return**
+### Return
 
 excel = win32com.client.Dispatch("Excel.Application") 에서 excel 반환. 
 
