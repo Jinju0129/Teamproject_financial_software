@@ -46,4 +46,4 @@
     ```
 
 ## Contents
-- [Welcome to the Teamproject_financial_software !!](#Welcome-to-the-Teamproject_financial_software!!)
+- [Welcome to the Teamproject_financial_software !!](#welcome-to-the-Teamproject_financial_software!!)
