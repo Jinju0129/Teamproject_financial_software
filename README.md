@@ -87,8 +87,7 @@ def    main()
 **Description**
 
 선수 스탯 random을 선택 시
-stat_players.py의 set_start_random('팀 name') 호출
-
+stat_players.py의 set_start_random('팀 name') 호출  
 선수 스탯 auto를 선택 시
 stat_players.py의 set_start_auto('팀 name') 호출
 
