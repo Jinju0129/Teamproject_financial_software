@@ -223,7 +223,7 @@ class Make_excel():
 **Description**
 #
 
-웹 스크랩을 통한 과거의 기록 및 승률 계산 ~~~(웹 스크랩 설명은 중복이므로 생략)~~~
+웹 스크랩을 통한 과거의 기록 및 승률 계산 (웹 스크랩 설명은 중복이므로 생략)
 
 poisson_distribution.py의 Poisson을 호출하고 get_poisson을 호출함으로써 푸아송 분포의 결과를 전달 받음
 
@@ -256,7 +256,6 @@ class Poisson:
     
 ```
 **Description**
-
 #
 
 team1의 공격력은 ( team_1의 평균 득점 / 리그의 평균 득점)
@@ -302,13 +301,27 @@ team1_poisson_list와 team2_poisson_list를 make_excel.py에 반환
 
 **Prototype Declaration**
 ```python
-void    main()
+class Block(pygame.sprite.Sprite):         # Block 객체 생성
+    def __init__(self, img):
+
+class Pannel:
+    def pannel(self, result_dict):          # 모든 유의미한 결과 pannel에 작성, Block 막대 너비 조정, 스코어 숫자이미지, text 로드
+    def flag_1(self, x, y):                 # 팀 1의 마크 이미지 위치 설정
+    def flag_2(self, x, y):                 # 팀 2의 마크 이미지 위치 설정
+    def runGame(self, result_dict):         # pygame event 처리, 패드 생상, 마크 위치 설정, 지속 업데이트, 각종 이미지 로드
+    def initGame(self, flag_1, flag_2):     # pygame init, gamepad 작성, 각 팀별 마크 이미지 load
 ```
 **Description**
-메모리 영역 초기화
+#
+pannel.py는 위의 모든 결과를 전달 받아 이미지 or text로 결과를 출력.
+
+initGame과 runGame은 pygame의 밑바탕과 루틴을 조절하며 pannel에서 유의미한 값(패스, 슈팅 등)을 Block 객체를 활용하여 load함
+
+각 위치의 설정 값 등은 Test등을 통해 할당했으며, image를 각각 동일한 크기로 편집하여 사용자가 일관성 있게 결과를 보도록 함
 
 **Return**
-메모리 영역 반환
+
+pygame 화면을 
 
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
