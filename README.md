@@ -52,7 +52,8 @@
 ## Contents
 - [Welcome to the Teamproject_financial_software !!](#welcome-to-the-teamproject_financial_software)
     * [Getting started](#getting-started)
-    * [functions](*functions)
+    * [Contents](#contents)
+    * [functions](#functions)
         + [main.py](#mainpy)
         + [stat_players.py](#stat_playerspy)
         + [calcul_score.py](#calcul_scorepy)
