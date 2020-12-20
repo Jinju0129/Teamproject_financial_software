@@ -125,7 +125,6 @@ def set_start_auto(team1):                      # 선수 생성 및 set_stat_aut
 
 **Description**
 
-
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
 사용자가 입력한 스탯 할당 방식에 따라 선수들의 스탯을 할당
@@ -140,7 +139,6 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 **set_stat_auoto의 중요 기능인 웹 스크랩**
 ```python
-
     def set_stat_auto(self):
         # 선수들의 정보를 얻기 위해 각각의 선수에 맞는 url 조작
         url = 'https://www.futbin.com/21/players?page=1&search=' + self.p_name
@@ -162,9 +160,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
-
 **Return**
-
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
@@ -189,7 +185,6 @@ class Calculate:
 
 **Description**
 
-
 calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
 
 calculte_shoot은 스탯의 일부를 합산하여 team1과 team2 간의 슈팅, 선방횟수, 골을 계산함. 이를 위한 자체 알고리즘 이용
@@ -200,7 +195,6 @@ calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산
 
 get_result는 위 4개의 method를 호출함
 
-
 **Return**
 
 result_dict을 반환함. 
@@ -209,7 +203,6 @@ ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당�
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
         </div>
-
 ---
 
 ### make_excel.py
