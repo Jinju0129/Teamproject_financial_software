@@ -101,6 +101,8 @@ calcul_score.py의 Calculate('팀1 kor_name', '팀2 kor_name')와 get_result() �
 모든 결과를 pannel에 출력시키기 위한 Pannel.py의 initGame('팀 1 kor_name', '팀 2 kor_name') 호출
 pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출  
 
+#
+
 ### Return
 
 함수의 종료
@@ -164,6 +166,8 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
+#
+
 ### Return
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
@@ -189,6 +193,8 @@ class Calculate:
 
 **Description**  
 
+#
+
 calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
 
 calculte_shoot은 스탯의 일부를 합산하여 team1과 team2 간의 슈팅, 선방횟수, 골을 계산함. 이를 위한 자체 알고리즘 이용
@@ -198,6 +204,8 @@ calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비
 calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
 
 get_result는 위 4개의 method를 호출함  
+
+#
 
 ### Return
 
@@ -221,6 +229,7 @@ class Make_excel():
 
 **Description**
 
+#
 
 웹 스크랩을 통한 과거의 기록 및 승률 계산 ~~~(웹 스크랩 설명은 중복이므로 생략)~~~
 
@@ -230,6 +239,7 @@ ex)write_ws['E9'] = "<MY RESULT>" 와 같이 원하는 위치에 엑셀 데이�
     
 yellowFill = PatternFill(start_color='FFFF99', end_color='FFFF99', fill_type='solid') 와 같이 색상 대입
 
+#
 
 **Return**
 
@@ -251,7 +261,12 @@ excel 을 통하여 해당 엑셀 파일(result_list.xlsx)을 열고 닫을 수 
 void    main()
 ```
 **Description**
+
+#
+
 메모리 영역 초기화
+
+#
 
 **Return**
 메모리 영역 반환
