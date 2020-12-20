@@ -41,8 +41,9 @@
 
     ```
     pip install -U -r requirements.txt
-    에러시 pip install --upgrade pip를 진행한 뒤, 재입력합니다
-    그래도 에러시 pip install -r requirements.txt를 입력합니다
+    
+    (에러시 pip install --upgrade pip를 진행한 뒤, 재입력합니다)
+    (그래도 해결되지 않을시 pip install -r requirements.txt를 입력하거나 dndydtmd@naver.com으로 연락주세요)
     ```
 
 3. main.py에서 프로그램을 실행합니다.
@@ -113,13 +114,13 @@ pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출
 
 **Prototype Declaration**
 ```python
-class Player:
-    def __init__(self, p_name, p_position):
-    def set_stat_random(self):
-    def set_stat_auto(self):
-    def print_player_info(self):
-def set_start_random(team1):
-def set_start_auto(team1):
+class Player:                                   # 각 선수 객체
+    def __init__(self, p_name, p_position):     # 변수 선언
+    def set_stat_random(self):                  # 스탯 random할당
+    def set_stat_auto(self):                    # 스탯 auto할당(웹 스크랩)
+    def print_player_info(self):                # 선수 스탯 정보 출력
+def set_start_random(team1):                    # 선수 생성 및 set_stat_random호출
+def set_start_auto(team1):                      # 선수 생성 및 set_stat_auto호출
 ```
 
 **Description**
