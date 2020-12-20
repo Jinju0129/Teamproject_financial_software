@@ -10,6 +10,9 @@
 
 |       **File name**       |       **기능**       |    
 |---------------------------|----------------------|
-|         main.py           | main은 다른 파일들을 총괄합니다. 팀 선택, 스탯 할당 방식, 다른 method 호출 등| 
+|         main.py           | 전체적인 것을 총괄합니다. method들을 호출하며 사용자 입력으로부터 오류를 처리합니다| 
 |       stat_plaers.py      | 사용자의 입력에 따라, random or 웹 스크랩 방식으로 선수들 스탯을 할당합니다|
 |       cacul_score.py      | 선수들의 스탯을 합산한 뒤, (슈팅, 패스, 점유율, 선방횟수 등)을 계산합니다|
+|       make_excel.py       | 웹 스크랩을 통하여 과거의 기록들을 excel에 작성하고, 푸아송 분포와 직접 추정한 결과를 작성합니다|
+|   poisson_distribution.py | 푸아송 분포를 통해서 [team1 vs team2] 결과 간 score를 예측하고 make_excel에 전달합니다|
+|        Pannel.py          | 모든 결과들을 전달 받아 pygame을 통해 image 등으로 결과를 표현합니다|
