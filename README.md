@@ -105,14 +105,58 @@ pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출
 
 **Prototype Declaration**
 ```python
-void    main()
+class Player:
+    def __init__(self, p_name, p_position):
+    def set_stat_random(self):
+    def set_stat_auto(self):
+    def print_player_info(self):
+def set_start_random(team1):
+def set_start_auto(team1):
 ```
+
 **Description**
-메모리 영역 초기화
+
+class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
+
+사용자가 입력한 스탯 할당 방식에 따라 선수들의 스탯을 할당
+
+맨 처음 main에서 랜덤하게 설정한다고 하면, set_start_random()을 호출
+이 메서드는 다시 클래스의 set_stat_random()을 활용
+
+반면에, 오토(웹 스크랩 방식)로 설정한다고 하면, main에서 set_start_auto()를 호출
+이 메서드는 다시 클래스의 set_stat_auto()를 활용
+
+할당 결과를 사용자에게 확인시키기 위해 print_player_info를 통해 팀 내의 선수 전부의 스탯을 print
+
+
+
+**set_stat_auoto의 중요 방식 웹 스크랩**
+```
+
+    def set_stat_auto(self):
+        # 선수들의 정보를 얻기 위해 각각의 선수에 맞는 url 조작
+        url = 'https://www.futbin.com/21/players?page=1&search=' + self.p_name
+        response = requests.get(url)
+        # BeautifulSoup을 활용해서 Html 소스를 가져옴
+        soup = BeautifulSoup(response.content, 'lxml')
+        # 홈페이지 엤는 table 을 찾는 과정. 해당 table 이름이 홈페이지에 있는 선수들 스탯 창을 의미함
+        table = soup.find("table",
+                          {"class": "table table-bordered table-hover table-responsive w-100 d-block d-md-table"})
+        # tr 에 있는 td 를 찾아 거기에 포함된 text 들을 data list 에 저장. 이 값들이 스탯 창에 있는 이용하고자 하는 수치 의미.
+        data = []
+        for a in table.find_all("tr"):
+            for b in a.find_all("td"):
+                data.append(b.get_text())
+
+        # 포지션도 피파 홈페이지에 있는 포지션으로 할당. data[2]에 저장되어 있음.
+        # 다른 선수들 능력치도 data에 저장되어 있는 값을 index로 활용가능.
+        self.p_position = data[2]
+        [생략]
+```
+
 
 **Return**
-메모리 영역 반환
-
+스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
         </div>
