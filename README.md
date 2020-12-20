@@ -85,3 +85,78 @@ void    main()
         </div>
 
 ---
+### stat_players.py
+> 선수들 능력치 할당(랜덤 or auto)
+
+**Prototype Declaration**
+```python
+void    main()
+```
+**Description**
+메모리 영역 초기화
+
+**Return**
+메모리 영역 반환
+
+<div align = "right">
+    <b><a href = "#Contents">back to the top</a><b>
+        </div>
+
+---
+
+### calcul_score.py
+> 종합된 선수들의 스탯을 활용하여, 경기 결과 도출
+
+**Prototype Declaration**
+```python
+void    main()
+```
+**Description**
+메모리 영역 초기화
+
+**Return**
+메모리 영역 반환
+
+<div align = "right">
+    <b><a href = "#Contents">back to the top</a><b>
+        </div>
+
+---
+
+### make_excel.py
+> 직접 도출한 결과, 푸아송 분포를 통해 예측되는 결과, 과거의 결과를 엑셀에 
+
+**Prototype Declaration**
+```python
+void    main()
+```
+**Description**
+메모리 영역 초기화
+
+**Return**
+메모리 영역 반환
+
+<div align = "right">
+    <b><a href = "#Contents">back to the top</a><b>
+        </div>
+
+---
+
+### poisson_distribution.py
+> 푸아송 분포를 통해 두 팀간의 스코어 확률을 예측함.
+
+**Prototype Declaration**
+```python
+void    main()
+```
+**Description**
+메모리 영역 초기화
+
+**Return**
+메모리 영역 반환
+
+<div align = "right">
+    <b><a href = "#Contents">back to the top</a><b>
+        </div>
+
+---
