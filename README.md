@@ -131,7 +131,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 
 **set_stat_auoto의 중요 방식 웹 스크랩**
-```
+```python
 
     def set_stat_auto(self):
         # 선수들의 정보를 얻기 위해 각각의 선수에 맞는 url 조작
