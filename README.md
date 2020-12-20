@@ -98,12 +98,11 @@ calcul_score.py의 Calculate('팀1 kor_name', '팀2 kor_name')와 get_result() �
 엑셀에 결과를 저장하기 위한 make_excel.py의 Make_Excel('팀1 eng_name', '팀2 eng_name', '경기결과 result_dict변수') 호출
 
 모든 결과를 pannel에 출력시키기 위한 Pannel.py의 initGame('팀 1 kor_name', '팀 2 kor_name') 호출
-pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출
+pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출  
 
 **Return**
 
 함수의 종료
-
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
         </div>
