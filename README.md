@@ -85,7 +85,7 @@ def    main()
 ```
 
 **Description**
-
+#
 선수 스탯 random을 선택 시
 stat_players.py의 set_start_random('팀 name') 호출
 
@@ -123,6 +123,7 @@ def set_start_auto(team1):                      # 선수 생성 및 set_stat_aut
 ```
 
 **Description**
+#
 
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
