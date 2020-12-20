@@ -160,3 +160,22 @@ void    main()
         </div>
 
 ---
+
+### Pannel.py
+> 결과들을 pygame을 통해서 시각적으로 표현함
+
+**Prototype Declaration**
+```python
+void    main()
+```
+**Description**
+메모리 영역 초기화
+
+**Return**
+메모리 영역 반환
+
+<div align = "right">
+    <b><a href = "#Contents">back to the top</a><b>
+        </div>
+
+---
