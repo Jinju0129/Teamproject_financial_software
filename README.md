@@ -116,7 +116,6 @@ def set_start_auto(team1):
 
 **Description**
 
-
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
 사용자가 입력한 스탯 할당 방식에 따라 선수들의 스탯을 할당
@@ -129,8 +128,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 할당 결과를 사용자에게 확인시키기 위해 print_player_info를 통해 팀 내의 선수 전부의 스탯을 print
 
-
-**set_stat_auoto의 중요 방식 웹 스크랩**
+**set_stat_auoto의 중요 기능인 웹 스크랩**
 ```python
 
     def set_stat_auto(self):
@@ -168,7 +166,13 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
 
 **Prototype Declaration**
 ```python
-void    main()
+class Calculate:
+    def __init__(self, team_stat_1, team_stat_2):   # 선수들 스탯 합산을 위한 변수들 선언
+    def calculate_sum(self):                        # 선수들의 스탯 합산
+    def calculate_shoot(self):                      # 두 팀간의 슈팅, 선방횟수, 골 계산
+    def calculate_possession(self):                 # 점유율 
+    def calculate_pass(self):                       # 패스 횟수
+    def get_result(self):                           # 위의 메소드들을 호출
 ```
 **Description**
 메모리 영역 초기화
