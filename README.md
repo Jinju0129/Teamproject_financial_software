@@ -183,6 +183,7 @@ class Calculate:
     def calculate_pass(self):                       # 패스 횟수
     def get_result(self):                           # 위의 메소드들을 호출
 ```
+
 **Description**
 
 calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
@@ -194,6 +195,7 @@ calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비
 calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
 
 get_result는 위 4개의 method를 호출함
+
 
 **Return**
 
