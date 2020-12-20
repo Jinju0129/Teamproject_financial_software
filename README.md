@@ -100,7 +100,7 @@ calcul_score.py의 Calculate('팀1 kor_name', '팀2 kor_name')와 get_result() �
 모든 결과를 pannel에 출력시키기 위한 Pannel.py의 initGame('팀 1 kor_name', '팀 2 kor_name') 호출
 pannel의 동작을 위한 runGame('경기결과 result_dict변수') 호출  
 
-##Return
+### Return
 
 함수의 종료
 <div align = "right">
@@ -159,7 +159,7 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
-**Return**
+### Return
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
@@ -194,7 +194,7 @@ calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산
 
 get_result는 위 4개의 method를 호출함  
 
-**Return**
+### Return
 
 result_dict을 반환함. 
 ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당되어 있음
