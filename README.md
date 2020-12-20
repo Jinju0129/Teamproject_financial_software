@@ -50,12 +50,12 @@
     * [Getting started](#getting-started)
     * [Contents](*contents)
     * [functions](*functions)
-        + [main.py](#main.py)
-        + [stat_players.py](#stat_players.py)
-        + [calcul.py](#calcul.py)
-        + [make_excel.py](#make_excel.py)
-        + [poisson_distribution.py](#poisson_distribution.py)
-        + [Pannel.py](#Pannel.py)
+        + [main.py](#mainpy)
+        + [stat_players.py](#stat_playerspy)
+        + [calcul.py](#calculpy)
+        + [make_excel.py](#make_excelpy)
+        + [poisson_distribution.py](#poisson_distributionpy)
+        + [Pannel.py](#Pannelpy)
     
     
 ## functions
