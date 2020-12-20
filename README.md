@@ -184,10 +184,21 @@ class Calculate:
     def get_result(self):                           # 위의 메소드들을 호출
 ```
 **Description**
-메모리 영역 초기화
+
+calculte_sum은 팀 내 선수들의 스탯을 특성대로('패스', '슈팅', '드리블' 등) 합산
+
+calculte_shoot은 스탯의 일부를 합산하여 team1과 team2 간의 슈팅, 선방횟수, 골을 계산함. 이를 위한 자체 알고리즘 이용
+
+calculte_possession은 선수들의 대부분의 스탯을 합산하여 %로 비교
+
+calculate_pass는 스탯 중 '패스', '드리블', '주력', '체력'의 합산과 '수비' * 2 , '주력', '체력' 간의 비교를 진행
+
+get_result는 위 4개의 method를 호출함
 
 **Return**
-메모리 영역 반환
+result_dict을 반환함. 
+
+ex) result_dict["패스"] 는 패스에 관한 두 팀의 결과 값이 할당되어 있음
 
 <div align = "right">
     <b><a href = "#Contents">back to the top</a><b>
