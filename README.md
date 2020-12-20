@@ -125,6 +125,7 @@ def set_start_auto(team1):                      # 선수 생성 및 set_stat_aut
 
 **Description**
 
+
 class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를 의미
 
 사용자가 입력한 스탯 할당 방식에 따라 선수들의 스탯을 할당
@@ -160,7 +161,9 @@ class Player는 말 그대로 각 팀에 속해있는 선수 하나의 객체를
         [생략]
 ```
 
+
 **Return**
+
 
 스탯이 할당된 선수들 객체가 담긴 list인 p_list 반환
 <div align = "right">
