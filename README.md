@@ -257,6 +257,8 @@ class Poisson:
 ```
 **Description**
 
+#
+
 team1의 공격력은 ( team_1의 평균 득점 / 리그의 평균 득점)
 
 team1의 방어력은 ( team_2의 평균 득점 / 리그의 평균 실점)
