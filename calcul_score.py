@@ -62,8 +62,8 @@ class Calculate:
 
         # team1의 공격에 관한 것. 적당한 횟수로 파악하고자 100회 반복을 시켰음
         for i in range(0, 100):
-            attack_range = random.randrange(0, team_1_attack)
-            defense_range = random.randrange(0, team_2_defense)
+            attack_range = random.randrange(1, team_1_attack)
+            defense_range = random.randrange(1, team_2_defense)
 
             # 공격 수치보다 수비 수치가 높으면 save_count 를 증가시킴
             if attack_range <= defense_range:
@@ -72,7 +72,7 @@ class Calculate:
                 # 선수들의 평균 슈팅을 GK의 합으로 나눈다음 100을 곱하면 골을 넣을 확률이 됨. 여기다가 다시 100을 넣어서 range(0, 100)과 비교
                 # 수비력에 대한 슈팅 percentage
                 shoot_range = int(((self.team_1_sum_dict["슈팅"]/10) / (self.team_2_sum_dict["수비"]/10 )) * 100 )
-                if random.randrange(0, int(shoot_range)) >= random.randrange(0, self.team_2_GK):
+                if random.randrange(1, int(shoot_range)) >= random.randrange(1, self.team_2_GK):
                     goal_team_1 = goal_team_1 + 1
                 else:
                     save_team_2 = save_team_2 + 1
@@ -91,15 +91,15 @@ class Calculate:
         save_count = 0
         # team2의 공격에 관한 것. 이하 동작은 team1 과 같음
         for i in range(0, 100):
-            attack_range = random.randrange(0, team_2_attack)
-            defense_range = random.randrange(0, team_1_defense)
+            attack_range = random.randrange(1, team_2_attack)
+            defense_range = random.randrange(1, team_1_defense)
             if attack_range <= defense_range:
                 save_count = save_count + 1
             else:
                 # 선수들의 평균 슈팅을 GK의 합으로 나눈다음 100을 곱하면 골을 넣을 확률이 됨. 여기다가 다시 100을 넣어서 range(0, 100)과 비교
                 # 수비력에 대한 슈팅 percentage
                 shoot_range = int(((self.team_2_sum_dict["슈팅"] / 10) / (self.team_1_sum_dict["수비"] / 10)) * 100)
-                if random.randrange(0, int(shoot_range)) >= random.randrange(0, self.team_1_GK):
+                if random.randrange(1, int(shoot_range)) >= random.randrange(1, self.team_1_GK):
                     goal_team_2 = goal_team_2 + 1
                 else:
                     save_team_1 = save_team_1 + 1
@@ -153,12 +153,12 @@ class Calculate:
                                    self.team_2_sum_dict["체력"]) / 4)
         # pass 하는 팀과 pass 를 수비하는 팀들 간의 random 을 이용하여 수치 계산
         for i in range(0, random.randrange(100, 300)):
-            if random.randrange(0, pass_team_1) > random.randrange(0, pass_defense_team_2):
+            if random.randrange(1, pass_team_1) > random.randrange(1, pass_defense_team_2):
                 pass_count_1 = pass_count_1 + 1
             else:
                 pass_false_1 = pass_false_1 + 1
         for i in range(0, random.randrange(100, 300)):
-            if random.randrange(0, pass_team_2) > random.randrange(0, pass_defense_team_1):
+            if random.randrange(1, pass_team_2) > random.randrange(1, pass_defense_team_1):
                 pass_count_2 = pass_count_2 + 1
             else:
                 pass_false_2 = pass_false_2 + 1
